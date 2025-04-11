@@ -457,6 +457,13 @@ body{
         text-align: left;
     }
 }
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+    .blog .blogIMG img{
+        width: 30px;
+        height: 30px;
+    }
+  }
 
 /* ========== Laptops (≥992px) ========== */
 
@@ -776,9 +783,7 @@ body{
     color:  hsl(176, 68%, 64%);
 }
 
-/* Base styles for .contact and .cont already defined above */
 
-/* Responsive Styles */
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 1024px) {
