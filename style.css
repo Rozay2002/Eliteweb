@@ -1045,7 +1045,14 @@ body{
       flex-direction: column;
       text-align: left;
     }
-  
+    .set2 .x{
+        display: flex;
+        flex-direction: row;
+    }
+    .set2 .y{
+        display: flex;
+        flex-direction: row;
+    }
     .set1, .set2, .set3, .set4, .set5 {
       align-items: left;
       justify-content: left;
@@ -1058,6 +1065,7 @@ body{
   
     .set5 {
       justify-content: center;
+      padding-top: 20px;
     }
   
     .set5 img {
