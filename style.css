@@ -25,17 +25,8 @@ body{
 .navbar img{
     height: 50px;
     width: 100px;
-    animation: zoomIn 2s;
 }
-@keyframes zoomIn{
-    0%{
-        transform: scale(0.5);
-    }
-    100%{
-        transform:scale(1);
-    }
-   
-}
+
 
 .navbar .links{
     margin-left: auto;
@@ -160,20 +151,9 @@ body{
 .image img{
     max-width: 300px;
     height: auto;
-    animation: zoomIn 4s infinite;
 }
-@keyframes zoomIn{
-    0%{
-        transform: scale(0.5);
-    }
-    50%{
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(0.5);
-    }
-   
-}
+
+
 .home .text{
     color: white;
 }
@@ -1063,21 +1043,21 @@ body{
     .footer .all {
       display: flex;
       flex-direction: column;
-      text-align: center;
+      text-align: left;
     }
   
     .set1, .set2, .set3, .set4, .set5 {
-      align-items: center;
-      justify-content: center;
+      align-items: left;
+      justify-content: left;
     }
   
     .set2 .x, .set2 .y {
       flex-direction: column;
-      align-items: center;
+      align-items: left;
     }
   
     .set5 {
-      justify-content: center;
+      justify-content: left;
     }
   
     .set5 img {
@@ -1105,16 +1085,4 @@ body{
     }
   }
   
-  /* Dark mode */
-  @media (prefers-color-scheme: dark) {
-    .footer {
-      background-color: hsl(225, 67%, 1%);
-      color: white;
-    }
-    .set3 a, .set4 a {
-      color: white;
-    }
-    .set5 img {
-      border-color: white;
-    }
-  }
+  
