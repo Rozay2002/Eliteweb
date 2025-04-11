@@ -460,8 +460,8 @@ body{
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
     .blog .blogIMG img{
-        width: 90px;
-        height: 90px;
+        width: 150px;
+        height: 150px;
     }
   }
 
