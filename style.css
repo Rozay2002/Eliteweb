@@ -1045,6 +1045,10 @@ body{
       flex-direction: column;
       text-align: left;
     }
+    .imaLogo img{
+        width: 30px;
+        height: 30px;
+    }
     .set2 .x{
         display: flex;
         flex-direction: row;
