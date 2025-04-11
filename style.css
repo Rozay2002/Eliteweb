@@ -1047,7 +1047,7 @@ body{
     }
     .imaLogo img{
         width: 30px;
-        height: 40px;
+        height: 50px;
     }
     .set2 .x{
         display: flex;
@@ -1075,6 +1075,9 @@ body{
       margin: 0 5px;
       width: 15px;
       height: 15px;
+    }
+    .services .content{
+        padding-top: 30px;
     }
   }
   
