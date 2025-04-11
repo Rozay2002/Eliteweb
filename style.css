@@ -1,0 +1,1120 @@
+@import url(https://fonts.google.com/specimen/Raleway);
+  
+body{
+    font-family: url(https://fonts.google.com/specimen/Open+Sans);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+.entire{
+    position: relative; 
+   /* background:  url('IMAGES/5.jpg') center no-repeat;*/
+    background-color:  hsl(220, 75%, 2%);
+}
+
+/*navbar*/
+
+.navbar{
+    padding: 20px 130px;
+    display: flex;
+    margin: 0 auto;
+    scroll-behavior: smooth; 
+    
+}
+.navbar img{
+    height: 50px;
+    width: 100px;
+    animation: zoomIn 2s;
+}
+@keyframes zoomIn{
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform:scale(1);
+    }
+   
+}
+
+.navbar .links{
+    margin-left: auto;
+}
+.navbar a{
+    padding: 7px;
+    margin-left: 25px;
+    text-decoration: none;
+    color:aliceblue; 
+}
+.navbar a:hover{
+    color: white;
+}
+/* ========== LARGE DESKTOPS (≥ 1200px) ========== */
+@media screen and (min-width: 1200px) {
+    .navbar {
+        padding: 20px 130px;
+        display: flex;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+}
+
+
+/* ========== STANDARD DESKTOPS (1024px–1199px) ========== */
+@media screen and (max-width: 1199px) {
+    .navbar {
+        padding: 20px 100px;
+        display: flex;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        gap: 20px;
+    }
+}
+
+
+/* ========== TABLETS (768px–1023px) ========== */
+@media screen and (max-width: 1023px) {
+    .navbar {
+        padding: 15px 60px;
+        display: flex;
+    }
+
+    .navbar img {
+        height: 45px;
+        width: 60px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+    }
+
+    .navbar .links {
+        gap: 15px;
+    }
+}
+
+
+/* ========== MOBILE PHONES (480px–767px) ========== */
+@media screen and (max-width: 767px) {
+    .navbar {
+        padding: 15px 30px;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .navbar img {
+        height: 40px;
+        width: 50px;
+    }
+
+    .navbar .links {
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        margin-left: 5px;
+        padding: 5px;
+    }
+}
+
+
+/* ========== EXTRA SMALL PHONES (< 480px) ========== */
+@media screen and (max-width: 479px) {
+    .navbar {
+        padding: 10px 15px;
+        display: flex;
+    }
+
+    .navbar img {
+        height: 30px;
+        width: 50px;
+    }
+
+    .navbar .links {
+        gap: 1px;
+        display: flex;
+    }
+
+    .navbar a {
+        font-size: 11px;
+        padding: 4px;
+        margin-left: 4px;
+    }
+}
+
+/*HOME*/
+.home {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    width: 100%;
+}
+.image img{
+    max-width: 300px;
+    height: auto;
+    animation: zoomIn 4s infinite;
+}
+@keyframes zoomIn{
+    0%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.5);
+    }
+   
+}
+.home .text{
+    color: white;
+}
+.text p{
+    color: white;
+} 
+.home .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.btn button {
+    padding: 10px 40px ; 
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(198, 60%, 50%); 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+.btn button:hover {
+    background-color: hsl(176, 68%, 64%);
+}
+.btn a{
+    text-decoration: none;
+    color: white;    
+}
+
+/* === Extra Small Devices (Phones, 0px – 480px) === */
+@media (max-width: 480px) {
+    .home {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    .image img {
+        max-width: 50%;
+    }
+
+    .home .text {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    .btn button {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
+
+/* === Small Devices (Phones and small tablets, 481px – 767px) === */
+@media (min-width: 481px) and (max-width: 767px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .image img {
+        max-width: 60%;
+        margin-bottom: 0;
+    }
+
+    .home .text {
+        margin-top: 20px;
+        font-size: 15px;
+
+    }
+
+    .btn button {
+        padding: 12px 90px;
+        font-size: 13px;
+    }
+}
+
+/* === Medium Devices (Tablets, 768px – 1024px) === */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .home {
+        flex-direction: column;
+        padding: 40px;
+        text-align: center;
+        height: auto;
+    }
+
+    .image img {
+        max-width: 60%;
+    }
+
+    .home .text {
+        margin-top: 25px;
+        font-size: 17px;
+    }
+
+    .btn button {
+        padding: 14px 50px;
+        font-size: 15px;
+    }
+}
+
+/* === Large Devices (Desktops, 1025px – 1440px) === */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .home {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0 60px;
+        text-align: center;
+    }
+
+    .image img {
+        max-width: 400px;
+    }
+
+    .home .text {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+    .btn button {
+        padding: 14px 43px;
+        font-size: 18px;
+    }
+}
+
+/* === Extra Large Devices (1441px and above) === */
+@media (min-width: 1441px) {
+    .home {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0 100px;
+        text-align: center;
+    }
+
+    .image img {
+        max-width: 350px;
+    }
+
+    .home .text {
+        margin-top: 30px;
+        font-size: 24px;
+    }
+
+    .btn button {
+        padding: 16px 48px;
+        font-size: 20px;
+    }
+}
+
+/*services*/
+.services {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    width: 100%;
+    
+}
+.services .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto);   
+    gap: 40px;                              
+    width: 80%;                             
+    text-align: center;
+}
+.txt1, .txt2, .txt3, .txt4 {
+    color: white;
+}
+
+/* Tablets and smaller (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .services .content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 90%;
+    }
+    .services img {
+        max-width: 70px;
+    }
+    .services .txt1, .txt2, .txt3, .txt4{
+        font-size: 13px;
+    }
+}
+
+/* Small mobile devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .services .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .services img {
+        max-width: 50px;
+    }
+    .services .txt1, .txt2, .txt3, .txt4{
+        font-size: 13px;
+    }
+}
+
+/*blog*/
+
+.blog {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.blog .content {
+    display: block;             
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+}
+
+.blog .blogIMG {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.blog .blogIMG img {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.blog .blogTXT {
+    color: white;
+    padding: 0 20px;
+}
+
+.blog .blogTXT h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.blog .blogTXT p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.blogTXT a {
+    text-decoration: underline;
+    color: white;
+}
+
+/* ========== Tablets and Up (≥768px) ========== */
+
+@media screen and (min-width: 768px) {
+    .blog .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 70px;
+        padding-left: 10%;
+        text-align: left;
+    }
+
+    .blog .blogIMG {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .blog .blogTXT {
+        width: 50%;
+        text-align: left;
+        padding: 0;
+    }
+
+    .blog .blogTXT h2 {
+        font-size: 28px;
+    }
+}
+
+/* === Small Devices (Phones and small tablets, 481px – 767px) === */
+@media (min-width: 481px) and (max-width: 767px) {
+    .blog .blogIMG {
+        width: 80%;
+        margin-bottom: 0;
+    }
+    .blog .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        text-align: left;
+    }
+}
+
+/* ========== Laptops (≥992px) ========== */
+
+@media screen and (min-width: 992px) {
+    .blog .content {
+        max-width: 1200px;
+    }
+
+    .blog .blogTXT h2 {
+        font-size: 30px;
+    }
+}
+
+/* ========== Desktops (≥1200px) ========== */
+
+@media screen and (min-width: 1200px) {
+    .blog .content {
+        max-width: 1300px;
+    }
+
+    .blog .blogTXT h2 {
+        font-size: 32px;
+    }
+}
+
+
+/* what people say */
+.quote{
+    position: absolute;
+    left: 120px;
+    z-index: -1;
+    
+}
+.cards{
+    margin-top: 100px;
+    padding: 30px 130px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    scroll-behavior: smooth;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+.cards .card1{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1;
+    padding: 20px 25px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: hsl(228, 22%, 5%);;
+    box-shadow: 20px 20px 20px 20px rgba(0,0,0,0.5);
+    cursor: pointer;
+
+}
+.card1 :hover{
+    transition: 0.5s;
+    color: aqua;
+}
+.pic1{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    gap: 20px;
+}
+.pic1 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+.card1 h5{
+    color: white;
+}
+
+
+.cards .card2{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    padding: 20px 25px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: hsl(228, 22%, 5%);;
+    box-shadow: 20px 20px 20px 20px rgba(0,0,0,0.5);
+     cursor: pointer;
+    
+}
+.card2 :hover{
+    transition: 0.5s;
+    color: aqua;
+}
+.pic2{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    gap: 20px;
+}
+.pic2 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+.card2 h5{
+    color: white;
+}
+.cards .card3{
+    height: 79%;
+    display: flex;
+    flex-direction: column;
+    grid-column: 3;
+    padding: 10px 25px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: hsl(228, 22%, 5%);;
+    box-shadow: 20px 20px 20px 20px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: var(--transition);
+   
+}
+.card3 :hover{
+    transition: 0.5s;
+    color: aqua;
+}
+.pic3{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    gap: 20px;
+}
+.pic3 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+.card3 h5{
+    color: white;
+}
+.card1, .card2, .card3 {
+    color: darkgray;
+}
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 80px;
+        gap: 20px;
+
+    }
+  
+    .cards .card3 {
+      grid-column: span 3;
+    }
+    .cards .card2 {
+        grid-column: span 3;
+      }
+      .cards .card1 {
+        grid-column: span 3;
+      }
+  }
+  
+  /* Small devices (large phones, 600px and up) */
+  @media (max-width: 768px) {
+    .cards {
+      grid-template-columns: 1fr;
+      padding: 20px 40px;
+      gap: 20px;
+    }
+  
+    .cards .card1,
+    .cards .card2,
+    .cards .card3 {
+      grid-column: span 1;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Extra small devices (phones, less than 600px) */
+  @media (max-width: 480px) {
+    .cards {
+      padding: 15px 20px;
+    }
+  
+    .pic1,
+    .pic2,
+    .pic3 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .pic1 img,
+    .pic2 img,
+    .pic3 img {
+      margin-top: 10px;
+    }
+  
+    .card1,
+    .card2,
+    .card3 {
+      padding: 15px;
+    }
+  }
+  
+  /* Ultra-wide or large screens */
+  @media (min-width: 1440px) {
+    .cards {
+      padding: 40px 180px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+  }
+  
+  /* Retina screens or very high resolution */
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+         only screen and (min--moz-device-pixel-ratio: 2),
+         only screen and (-o-min-device-pixel-ratio: 2/1),
+         only screen and (min-device-pixel-ratio: 2),
+         only screen and (min-resolution: 192dpi),
+         only screen and (min-resolution: 2dppx) {
+    .card1,
+    .card2,
+    .card3 {
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+    }
+  }
+  
+  /* Dark mode preference */
+  @media (prefers-color-scheme: dark) {
+    .card1,
+    .card2,
+    .card3 {
+      background-color: hsl(228, 15%, 10%);
+      color: white;
+    }
+    .card1 h5,
+    .card2 h5,
+    .card3 h5 {
+      color: white;
+    }
+  }
+  
+
+/*CONTACT*/
+
+.contact {
+    position: relative;
+    z-index: 2;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: -100px;
+    height: 100%;
+    position: relative;
+    z-index: 3;
+
+    
+}
+.cont .texting{
+    color: white;
+    padding: 20px 90px;
+    margin-right: 10px;
+    background-color: hsl(228, 22%, 5%);
+    box-shadow: 20px 20px 20px 20px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.texting h2{
+    text-align: center;
+}
+.texting p {
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.form input{
+    background-color:  hsl(0, 0%, 100%);
+    padding: 10px 70px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+.form button{
+    margin-left: 100px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color:  hsl(198, 60%, 50%);
+    cursor: pointer;
+    margin-top: 20px;
+    color: white;
+    
+}
+.form button:hover{
+    color:  hsl(176, 68%, 64%);
+}
+
+/* Base styles for .contact and .cont already defined above */
+
+/* Responsive Styles */
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 1024px) {
+    .cont {
+      padding: 0 40px;
+      margin-bottom: -80px;
+    }
+  
+    .cont .texting {
+      padding: 20px 40px;
+    }
+  
+    .form {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .form input {
+      padding: 10px 40px;
+    }
+  
+    .form button {
+      margin-left: 0;
+    }
+  }
+  
+  /* Small devices (phones, less than 768px) */
+  @media (max-width: 768px) {
+    .cont {
+      padding: 0 20px;
+      margin-bottom: -60px;
+    }
+  
+    .cont .texting {
+      padding: 15px 20px;
+    }
+  
+    .form {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .form input {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .form button {
+      width: 100%;
+      padding: 10px ;
+    }
+  }
+  
+  /* Extra small devices (less than 480px) */
+  @media (max-width: 480px) {
+    .cont {
+      margin-top: 50px;
+      margin-bottom: -40px;
+    }
+  
+    .cont .texting {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .form input,
+    .form button {
+      width: 100%;
+      padding: 8px;
+    }
+  }
+  
+  /* Large screens */
+  @media (min-width: 1440px) {
+    .cont {
+      margin-top: 120px;
+      margin-bottom: -120px;
+    }
+  
+    .cont .texting {
+      max-width: 900px;
+    }
+  }
+  
+  /* Retina/High-DPI displays */
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+         only screen and (min--moz-device-pixel-ratio: 2),
+         only screen and (-o-min-device-pixel-ratio: 2/1),
+         only screen and (min-device-pixel-ratio: 2),
+         only screen and (min-resolution: 192dpi),
+         only screen and (min-resolution: 2dppx) {
+    .cont .texting {
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+    }
+  }
+  
+  /* Dark mode */
+  @media (prefers-color-scheme: dark) {
+    .cont .texting {
+      background-color: hsl(228, 15%, 10%);
+      color: white;
+    }
+    .form button {
+      background-color: hsl(198, 50%, 40%);
+    }
+    .form button:hover {
+      color: hsl(176, 68%, 84%);
+    }
+  }
+/*FOOTER*/
+
+.footer{
+    color: white;
+    background-color:  hsl(225, 67%, 1%);
+    padding: 50px;
+    padding-top: 150px;
+    position: relative;
+    z-index: 1;
+    
+}
+.footer .imaLogo img{
+    width: 190px;
+}
+.footer .all{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: space-between;
+    gap: 60px;
+}
+.all .set1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+.set1 img{
+    width: 30px;
+    height: 20px;
+    margin-top: 18px;
+}
+.all .set2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.set2 .x{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: smaller;
+}
+.set2 .y{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: smaller;
+}
+.set2 img{
+    width: 20px;
+    height: 20px;
+    margin-top: 18px;
+    margin-left: 35px;
+}
+.set3 a{
+    text-decoration: none;
+    color: white;
+}
+.set3 ul{
+    list-style-type: none;
+}
+.set4 a{
+    text-decoration: none;
+    color: white;
+}
+.set4 ul{
+    list-style-type: none;
+}
+
+.set5 img{
+    justify-content: space-between;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+.set5 .hov:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+    transform: translateY(10px);
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 1024px) {
+    .footer .all {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+    
+    .set1, .set2 {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .set2 .x, .set2 .y {
+      flex-direction: row;
+    }
+  }
+  
+  /* Small devices (phones, less than 768px) */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 40px 20px;
+      padding-top: 120px;
+      background-color: hsl(225, 67%, 1%);
+      color: white;
+    }
+  
+    .footer .all {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      text-align: left;
+    }
+  
+    .set1 {
+      flex-direction: row;
+
+    }
+    .set1 img{
+        width: 30px;
+        height: 20px;
+        margin-left: 28px;
+    }
+    .set1 p{
+        padding-left: 0;
+        padding-right: 100px;
+    }
+
+    .set2 h3{
+        padding-left: 0;
+        padding-right: 220px;
+    }
+    .set2 .x, .set2 .y {
+        display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .set5 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+  
+  /* Extra small devices (less than 480px) */
+  @media (max-width: 480px) {
+    .footer .all {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .set1, .set2, .set3, .set4, .set5 {
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .set2 .x, .set2 .y {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .set5 {
+      justify-content: center;
+    }
+  
+    .set5 img {
+      margin: 0 5px;
+    }
+  }
+  
+  /* Large screens */
+  @media (min-width: 1440px) {
+    .footer .all {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 80px;
+    }
+  }
+  
+  /* Retina/High-DPI displays */
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+         only screen and (min--moz-device-pixel-ratio: 2),
+         only screen and (-o-min-device-pixel-ratio: 2/1),
+         only screen and (min-device-pixel-ratio: 2),
+         only screen and (min-resolution: 192dpi),
+         only screen and (min-resolution: 2dppx) {
+    .set5 img {
+      border-color: white;
+    }
+  }
+  
+  /* Dark mode */
+  @media (prefers-color-scheme: dark) {
+    .footer {
+      background-color: hsl(225, 67%, 1%);
+      color: white;
+    }
+    .set3 a, .set4 a {
+      color: white;
+    }
+    .set5 img {
+      border-color: white;
+    }
+  }
