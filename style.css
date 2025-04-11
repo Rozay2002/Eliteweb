@@ -1058,10 +1058,7 @@ body{
       justify-content: left;
     }
   
-    .set2 .x, .set2 .y {
-      flex-direction: column;
-      align-items: left;
-    }
+    
   
     .set5 {
       justify-content: center;
