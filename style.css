@@ -1048,13 +1048,14 @@ body{
     .set2 .x{
         display: flex;
         flex-direction: row;
-        gap: 30px;
+        gap: 15px;
     }
     .set2 .y{
         display: flex;
         flex-direction: row;
+        gap: 15px;
     }
-    .set1, .set2, .set3, .set4, .set5 {
+    .set1, .set2, .set3, .set4{
       align-items: left;
       justify-content: left;
     }
@@ -1068,8 +1069,8 @@ body{
   
     .set5 img {
       margin: 0 5px;
-      width: 10px;
-      height: 10px;
+      width: 15px;
+      height: 15px;
     }
   }
   
