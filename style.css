@@ -1048,6 +1048,7 @@ body{
     .set2 .x{
         display: flex;
         flex-direction: row;
+        gap: 30px;
     }
     .set2 .y{
         display: flex;
@@ -1067,6 +1068,8 @@ body{
   
     .set5 img {
       margin: 0 5px;
+      width: 10px;
+      height: 10px;
     }
   }
   
