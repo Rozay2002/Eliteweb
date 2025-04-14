@@ -7,6 +7,14 @@ body{
     overflow-x: hidden;
 
 }
+ /* Extra small devices (less than 480px) */
+ @media (max-width: 480px) {
+    .entire{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+  }
 .entire{
     position: relative; 
    /* background:  url('IMAGES/5.jpg') center no-repeat;*/
